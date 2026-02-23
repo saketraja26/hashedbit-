@@ -6,157 +6,115 @@
     <title>JS Practice 1 - Delta</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 40px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
             margin: 0;
-            color: white;
         }
 
         h1 {
             text-align: center;
-            font-size: 48px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-            margin-bottom: 20px;
+            color: #333;
         }
 
         body > p {
             text-align: center;
-            font-size: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         h3 {
-            color: #ffd700;
-            font-size: 24px;
+            color: #007bff;
             margin-top: 20px;
         }
 
         p {
-            font-size: 16px;
             line-height: 1.6;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
+            color: #555;
         }
 
         button {
-            padding: 12px 30px;
-            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-            color: #333;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
             border: none;
-            border-radius: 25px;
+            border-radius: 4px;
             cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
             margin-bottom: 10px;
         }
 
         button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+            background-color: #0056b3;
         }
 
         hr {
             border: none;
-            border-top: 2px solid rgba(255, 255, 255, 0.3);
-            margin: 30px 0;
-        }
-
-        .question-section {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            border-left: 5px solid #ffd700;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <h1>🚀 JS Practice 1 - Delta</h1>
+    <h1>JS Practice 1 - Delta</h1>
     <p>Open the console to see answers. Click the buttons below:</p>
 
-    <div class="question-section">
-        <h3>Question 1:</h3>
-        <p>Write a JavaScript function that declares a variable using let, const, and var. What is the difference in scope for each?</p>
-        <button onclick="question1()">Show Answer</button>
-    </div>
+    <h3>Question 1:</h3>
+    <p>Write a JavaScript function that declares a variable using let, const, and var. What is the difference in scope for each?</p>
+    <button onclick="question1()">Show Answer</button>
     <hr>
 
-    <div class="question-section">
-        <h3>Question 2:</h3>
-        <p>Create an array called fruits that contains five different fruit names. Write a function that returns the second fruit in the array.</p>
-        <p>Array: ['Apple', 'Banana', 'Orange', 'Mango', 'Grapes']</p>
-        <button onclick="question2()">Show Answer</button>
-    </div>
+    <h3>Question 2:</h3>
+    <p>Create an array called fruits that contains five different fruit names. Write a function that returns the second fruit in the array.</p>
+    <p>Array: ['Apple', 'Banana', 'Orange', 'Mango', 'Grapes']</p>
+    <button onclick="question2()">Show Answer</button>
     <hr>
 
-    <div class="question-section">
-        <h3>Question 3:</h3>
-        <p>Write a function that takes an array as an argument, adds a new element to the end of the array using push(), and then removes the last element using pop(). Return the modified array.</p>
-        <p>Array: [1, 2, 3, 4, 5]</p>
-        <button onclick="question3()">Show Answer</button>
-    </div>
+    <h3>Question 3:</h3>
+    <p>Write a function that takes an array as an argument, adds a new element to the end of the array using push(), and then removes the last element using pop(). Return the modified array.</p>
+    <p>Array: [1, 2, 3, 4, 5]</p>
+    <button onclick="question3()">Show Answer</button>
     <hr>
 
-    <div class="question-section">
-        <h3>Question 4:</h3>
-        <p>Create an array of numbers and write a function that uses the map() method to return a new array containing each number squared.</p>
-        <p>Array: [1, 2, 3, 4, 5]</p>
-        <button onclick="question4()">Show Answer</button>
-    </div>
+    <h3>Question 4:</h3>
+    <p>Create an array of numbers and write a function that uses the map() method to return a new array containing each number squared.</p>
+    <p>Array: [1, 2, 3, 4, 5]</p>
+    <button onclick="question4()">Show Answer</button>
     <hr>
 
-    <div class="question-section">
-        <h3>Question 5:</h3>
-        <p>Write a function that filters out all even numbers from an array of numbers using the filter() method. Return the new array of odd numbers.</p>
-        <p>Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</p>
-        <button onclick="question5()">Show Answer</button>
-    </div>
+    <h3>Question 5:</h3>
+    <p>Write a function that filters out all even numbers from an array of numbers using the filter() method. Return the new array of odd numbers.</p>
+    <p>Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</p>
+    <button onclick="question5()">Show Answer</button>
     <hr>
 
-    <div class="question-section">
-        <h3>Question 6:</h3>
-        <p>Create an object called person with properties for name, age, and occupation. Write a function that logs a greeting message using these properties.</p>
-        <p>Object: { name: 'John Doe', age: 30, occupation: 'Software Developer' }</p>
-        <button onclick="question6()">Show Answer</button>
-    </div>
+    <h3>Question 6:</h3>
+    <p>Create an object called person with properties for name, age, and occupation. Write a function that logs a greeting message using these properties.</p>
+    <p>Object: { name: 'John Doe', age: 30, occupation: 'Software Developer' }</p>
+    <button onclick="question6()">Show Answer</button>
     <hr>
 
-    <div class="question-section">
-        <h3>Question 7:</h3>
-        <p>Write a function that takes an object with properties width and height and returns the area of a rectangle (width * height).</p>
-        <p>Object: { width: 10, height: 5 }</p>
-        <button onclick="question7()">Show Answer</button>
-    </div>
+    <h3>Question 7:</h3>
+    <p>Write a function that takes an object with properties width and height and returns the area of a rectangle (width * height).</p>
+    <p>Object: { width: 10, height: 5 }</p>
+    <button onclick="question7()">Show Answer</button>
     <hr>
 
-    <div class="question-section">
-        <h3>Question 8:</h3>
-        <p>Given an object with various properties, write a function that returns an array of the object's keys using Object.keys().</p>
-        <p>Object: { name: 'Alice', age: 25, city: 'New York', occupation: 'Engineer' }</p>
-        <button onclick="question8()">Show Answer</button>
-    </div>
+    <h3>Question 8:</h3>
+    <p>Given an object with various properties, write a function that returns an array of the object's keys using Object.keys().</p>
+    <p>Object: { name: 'Alice', age: 25, city: 'New York', occupation: 'Engineer' }</p>
+    <button onclick="question8()">Show Answer</button>
     <hr>
 
-    <div class="question-section">
-        <h3>Question 9:</h3>
-        <p>Write a function that takes two objects as arguments and merges them into one object using Object.assign(). Return the new object.</p>
-        <p>Object 1: { name: 'John', age: 30 }</p>
-        <p>Object 2: { city: 'Paris', occupation: 'Designer' }</p>
-        <button onclick="question9()">Show Answer</button>
-    </div>
+    <h3>Question 9:</h3>
+    <p>Write a function that takes two objects as arguments and merges them into one object using Object.assign(). Return the new object.</p>
+    <p>Object 1: { name: 'John', age: 30 }</p>
+    <p>Object 2: { city: 'Paris', occupation: 'Designer' }</p>
+    <button onclick="question9()">Show Answer</button>
     <hr>
 
-    <div class="question-section">
-        <h3>Question 10:</h3>
-        <p>Create an array of numbers and write a function that uses the reduce() method to calculate the sum of all the numbers in the array.</p>
-        <p>Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</p>
-        <button onclick="question10()">Show Answer</button>
-    </div>
+    <h3>Question 10:</h3>
+    <p>Create an array of numbers and write a function that uses the reduce() method to calculate the sum of all the numbers in the array.</p>
+    <p>Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</p>
+    <button onclick="question10()">Show Answer</button>
 
     <script>
         // Question 1: Declare variables using let, const, and var
